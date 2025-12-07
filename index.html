@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="slider_container">
+        <div class="slider_images">
+            <div class="slider_img">
+                <img src="image/1.png" alt="img_1">
+                <h1>Mike</h1>
+
+                <div class="details">
+                    <h2>Mike</h2>
+                    <p>Web3 Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img">
+                <img src="image/2.png" alt="img_2">
+                <h1>Samite</h1>
+
+                <div class="details">
+                    <h2>Samite</h2>
+                    <p>Wordpress Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img">
+                <img src="image/3.png" alt="img_3">
+                <h1>Hashi</h1>
+
+                <div class="details">
+                    <h2>Hashi</h2>
+                    <p>Java Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img active">
+                <img src="image/4.png" alt="img_4">
+                <h1>Kaity</h1>
+
+                <div class="details">
+                    <h2>Kaity</h2>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img">
+                <img src="image/5.png" alt="img_5">
+                <h1>Lauren</h1>
+
+                <div class="details">
+                    <h2>Lauren</h2>
+                    <p>php Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img">
+                <img src="image/6.png" alt="img_6">
+                <h1>Ryan</h1>
+
+                <div class="details">
+                    <h2>Ryan</h2>
+                    <p>Seo Developer</p>
+                </div>
+            </div>
+
+            <div class="slider_img">
+                <img src="image/7.png" alt="img_7">
+                <h1>Dakes</h1>
+
+                <div class="details">
+                    <h2>Dakes</h2>
+                    <p>Sql Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jQuery.js"></script>
+
+    <script>
+        jQuery(document).ready(function($){
+            $(".slider_img").on("click", function(){
+                $(".slider_img").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
